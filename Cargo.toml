@@ -1,0 +1,36 @@
+[package]
+name = "skt5"                  # nama project
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+rust-version = "1.77"
+
+[[ bin ]]
+name = "skt5"
+harness = false
+
+[features]
+default = []
+experimental = ["esp-idf-svc/experimental"]
+
+[dependencies]
+log = "0.4"
+anyhow = "1"
+
+# JSON & serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Versi svc/syshal yg sinkron dg ESP-IDF v5.2.x
+esp-idf-svc = "=0.51.0"
+esp-idf-hal = "0.45.0"
+esp-idf-sys = { version = "=0.36.1", features = ["binstart"] }
+
+# helper libs
+heapless = "0.8"
+embedded-hal = "1.0.0"
+crc16 = "0.4"
+
+[build-dependencies]
+embuild = "0.33"
+
