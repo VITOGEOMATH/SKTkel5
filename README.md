@@ -1,3 +1,5 @@
+<img width="1280" height="701" alt="image" src="https://github.com/user-attachments/assets/478efc21-0a9f-4d35-a63d-bcae2e1cf7a1" />
+
 # “SISTEM KONTROL TERDISTRIBUSI KEL.5 - Sistem Monitoring dan Kontrol Terintegrasi”
 Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT) yang menggabungkan pembacaan sensor SHT20, simulasi DWSIM, database InfluxDB, dan platform IoT ThingsBoard.
 
